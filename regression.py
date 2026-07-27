@@ -41,7 +41,7 @@ for i, net in enumerate(networks): #enumerate() gives position number and networ
         axes[i, j].legend(title='Diabetic Retinopathy') #adds legend box for blue + red definitions
 
 plt.tight_layout() #adjusts spacing
-plt.savefig("dose_response_curves.png", dpi=300) #saves whole chart grid as an image
+plt.savefig("regressions.png", dpi=300) #saves whole chart grid as an image
 plt.show() #opens a window on computer
 
 #running the physical regressions

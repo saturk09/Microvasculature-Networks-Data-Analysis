@@ -30,7 +30,7 @@ sns.heatmap(
 )
 plt.title('Diabetic/Non-Diabetic Correlation Matrix')  #chart title
 plt.tight_layout()                        #cleans up spacing
-plt.savefig('correlation_overall.png')    #saves the chart as img
+plt.savefig('correlations.png')    #saves the chart as img
 plt.show()                                #opens chart
 
 #helpful splitting to prevent data accuracy via less generic correlations
@@ -49,5 +49,5 @@ for ax, status in zip(axes, [0, 1]): #non-diabetic before diabetic, iterates thr
     ax.set_title(grouplabels[status])#label chart
 
 plt.tight_layout()
-plt.savefig('correlation_by_group.png')
+plt.savefig('diabeticcorrelations.png')
 plt.show()
